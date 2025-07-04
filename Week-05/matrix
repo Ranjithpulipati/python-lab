@@ -1,0 +1,32 @@
+r=int(input("enter the no.of row : "))
+c=int(input("enter the no.of column : "))
+M1=[]
+for i in range(r):
+    row=[]
+    for j in range(c):
+        n=int(input("enter the number :"))
+        row.append(n)
+    M1.append(row)
+print(M1)
+
+r=int(input("enter the no.of row : "))
+c=int(input("enter the no.of column : "))
+Mat=[]
+for i in range(r):
+    row=[]
+    for j in range(c):
+        n=int(input("enter the number :"))
+        row.append(n)
+    Mat.append(row)
+print(Mat)
+
+mult=[]
+for i in range(r):
+    row=[]
+    for j in range(c):
+        for k in range(r):
+            temp=0
+            temp+=M1[i][k]*Mat[k][j]
+        row.append(temp)
+    mult.append(row)
+print(mult)
